@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+  long int m,n,i,srm,srn,count1=0,t,z;
+  cin>>t;
+  for(z=0;z<t;z++)
+  {
+  cin>>m>>n;
+  srm=sqrt(m);
+  srn=sqrt(n);
+
+  for(i=srm;i<=srn;i++)
+  {
+      if(((i*i)>=m)&&((i*i)<=n))
+
+        count1++;
+
+  }
+  cout<<count1<<"\n";
+  count1=0;
+  }
+    return 0;
+}
