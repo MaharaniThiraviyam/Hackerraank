@@ -1,0 +1,20 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+     int n,m=5,i,count=0,val;
+  cin>>n;
+    for(i=0;i<n;i++)
+    { 
+     val = m / 2;
+     m = val * 3;
+     count = count + val;
+   }
+  cout<<count;
+    return 0;
+}
