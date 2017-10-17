@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int i,j,k,max1=100,num,n,a[25];
+  cin>>n>>k;
+  for(i=0;i<n;i++)
+    cin>>a[i];
+
+  for(i=0;i<n;i=i+k)
+  {
+
+      if(a[i]==0)
+        max1--;
+      else
+        max1-=3;
+  }
+
+  cout<<max1;
+ 
+
+    return 0;
+}
